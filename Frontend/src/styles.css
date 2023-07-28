@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files
+@font-face {
+    font-family: Samarkan;
+    src: local('/Frontend/src/assets/customfonts/Samarkan.ttf') format('truetype'),
+      local('/Frontend/src/assets/customfonts/samarkan-webfont.woff') format('woff'),
+      local('/Frontend/src/assets/customfonts/samarkan-webfont.woff2') format('woff2');  
+} */
+
+
+@font-face {
+    font-family: 'Sam';
+    src: url('./assets/customfonts/Samarkan.ttf');
+}
