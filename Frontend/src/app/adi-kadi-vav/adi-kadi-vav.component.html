@@ -1,0 +1,65 @@
+<img src="../../assets/Adi-Kadi-Vav-banner.jpg" alt="Adi Kadi Banner" style="width: 100%; height: 700px; margin-bottom: 3%;">
+<div class="container adi-content" id="aboutLocation">
+    <h5 class="my-3" style="font-family: 'Roboto Slab', serif;">About The Location</h5>
+    <p>These two stepwells inside Uparkot, are highly unusual forms of stepwells, very different from wells in other parts of Gujarat. Most wells are dug through various kinds of subsoils and rock layers, and stone columns, floors, stairs and walls are built much like they would be in above-ground construction. In the case of these two, the spaces of the well itself were carved out of stone, leaving the structure of the well (the columns, the walls, etc.) out of the original rock. This means no structural construction is done, so the whole structure of the well is hewn out of a single stone.</p>
+    <p>Adi-kadi Vav, built in the 15th century, is carved entirely out of hard rock. A narrow flight of 120 stairs cuts down through the stone to meet the well shaft deep in the stone. Two different legends claim to explain the name of the well. One says that the king ordered a stepwell to be built and workers excavated down into this hard stone, but no water was found. The royal priest said that water would only be found if two unmarried girls were sacrificed. Adi and Kadi were the unlucky ones chosen for this and after their sacrifice, water was found. The other story, less fantastic but probably more likely, claims that Adi and Kadi were the names of the royal servant girls who fetched water from the well every day. Either way, people still hang cloth and bangles on a tree nearby in their memory.</p>
+    <img src="../../assets/Adi-Kadi-Vav-image.jpg" class="my-5" alt="Adi Kadi Vav Image" style="width: 100%;">
+    <a routerLink="/"><button class="btn btn-outline-dark">Back</button></a>
+</div>
+<div class="container get-there" id="getThere">
+    <h4 class="my-3" style="font-family: 'Roboto Slab', serif;">How to Get There?</h4>
+    <br><br>
+    <div style="display: flex; margin-bottom: 8%;">
+        <img src="../../assets/by-road.png" alt="" class="direction-imgs">
+        <span class="transport-bus">
+            <h6>By Road</h6>
+            <p class="text-muted">Private and state bus services are available from different junctions in the state.</p>
+        </span>
+    </div>
+    <div style="display: flex; margin-bottom: 8%;">
+        <img src="../../assets/by-train.png" alt="" class="direction-imgs">
+        <span class="transport-train">
+            <h6>By Train</h6>
+            <p class="text-muted">The town has a railway station that is connected to major cities in Gujarat.</p>
+        </span>
+    </div>
+    <div style="display: flex; margin-bottom: 5%;">
+        <img src="../../assets/by-air.png" alt="" style="height: 100px; width: 250px;">
+        <span class="transport-flight">
+            <h6>By Air</h6>
+            <p class="text-muted">The closest airports to Junagadh are Keshod (40 km) Porbandar (104 km) and Rajkot (105.3 km).</p>
+        </span>
+    </div>
+    <br><br>
+    <a routerLink="/"><button class="btn btn-outline-dark">Back</button></a>
+</div>
+<div class="container adi-content-lower" id="nearbyDestinations">
+    <h4 class="my-3" style="font-family: 'Roboto Slab', serif;">Nearby Attractions</h4>
+    <div class="row">
+        <div class="col-4 destination-container-image">
+            <a routerLink="/girnar-hills" class="darken">
+                <img src="../../assets/girnar-hills.jpg" alt="Girnar Hills" style="height: 300px; width: 300px;">
+                <h5>Girnar Hills, Pilgrimage Centre</h5>
+            </a>
+        </div>
+        <div class="col-4 destination-container-image">
+            <a routerLink="/uparkotFort" class="darken">
+                <img src="../../assets/uparkot.jpg" alt="Uparkot Fort" style="height: 300px; width: 300px;">
+                <h5>Uparkot Fort</h5>
+            </a>
+        </div>
+        <div class="col-4 destination-container-image">
+            <a routerLink="/mahabat-maqbara" class="darken">
+                <img src="../../assets/mahabatMaqbara.jpg" alt="Mahabat Khan Maqbara" style="height: 300px; width: 300px;">
+                <h5>Mahabat Khan Maqbara</h5>
+            </a>
+        </div>
+    </div>
+    <br><br>
+    <a routerLink="/"><button class="btn btn-outline-dark">Back</button></a>
+</div>
+<ul class="navigation cf">
+    <li (click)="toAbout()" class="my-2 icon"><svg xmlns="http://www.w3.org/2000/svg" height="1.4em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg></li>
+    <li (click)="toGetThere()" class="my-2 icon"><svg xmlns="http://www.w3.org/2000/svg" height="1.4em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm306.7 69.1L162.4 380.6c-19.4 7.5-38.5-11.6-31-31l55.5-144.3c3.3-8.5 9.9-15.1 18.4-18.4l144.3-55.5c19.4-7.5 38.5 11.6 31 31L325.1 306.7c-3.2 8.5-9.9 15.1-18.4 18.4zM288 256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"/></svg></li>
+    <li (click)="toNearby()" class="my-2 icon"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M560 160A80 80 0 1 0 560 0a80 80 0 1 0 0 160zM55.9 512H381.1h75H578.9c33.8 0 61.1-27.4 61.1-61.1c0-11.2-3.1-22.2-8.9-31.8l-132-216.3C495 196.1 487.8 192 480 192s-15 4.1-19.1 10.7l-48.2 79L286.8 81c-6.6-10.6-18.3-17-30.8-17s-24.1 6.4-30.8 17L8.6 426.4C3 435.3 0 445.6 0 456.1C0 487 25 512 55.9 512z"/></svg></li>
+</ul>

@@ -1,0 +1,41 @@
+<div class="pos-f-t container-fluid navbar-container" style="background-color: #D3EBCD !important;">
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+      <h4 class="text-white">Collapsed content</h4>
+      <span class="text-muted">Toggleable via the navbar brand.</span>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #D3EBCD !important;">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" routerLink="/">
+      <img src="../../assets/logo-gujarat.png" width="70" height="70" alt="">
+    </a>
+
+    <div
+      class="collapse navbar-collapse justify-content-between"
+      id="navbarSupportedContent"
+    >
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/contact">Contact Us</a>
+        </li>
+      </ul>
+      <div>
+        <!-- <button class="btn btn-outline-success mx-3" type="submit" routerLink="/register">
+          Register
+        </button> -->
+        <button class="btn btn-outline-success" type="submit" routerLink="/login">
+          Login
+        </button>
+      </div>
+    </div>
+  </nav>
+</div>

@@ -1,0 +1,111 @@
+<!-- <div class="trails">
+    <div class="heading">
+        <p>Pick Your Trail - See Gujarat - As Per Your Interest</p>
+    </div>
+    <div class="carousel-container" >
+        <mdb-carousel class="rounded-5 shadow-4-strong" [controls]="true" [animation]="'fade'">
+            <mdb-carousel-item>
+            <img
+            src="../../assets/cuisine-gujarat.jpg"
+            class="d-block w-100 carousel-img"
+            alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Flavours</h5>
+            </div>
+            </mdb-carousel-item>
+            <mdb-carousel-item>
+            <img
+            src="../../assets/museum-gujarat.jpg"
+            class="d-block w-100 carousel-img"
+            alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Museums</h5>
+            </div>
+            </mdb-carousel-item>
+            <mdb-carousel-item>
+            <img
+            src="../../assets/wildlife-gujarat.jpg"
+            class="d-block w-100 carousel-img"
+            alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Flora and Fauna</h5>
+            </div>
+            </mdb-carousel-item>
+            <mdb-carousel-item>
+            <img
+            src="../../assets/temple-gujarat.jpg"
+            class="d-block w-100 carousel-img"
+            alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Religious Sites</h5>
+            </div>
+            </mdb-carousel-item>
+        </mdb-carousel>
+    </div>
+</div> -->
+<div class="trails">
+    <div class="heading">
+        <p>Pick Your Trail - See Gujarat - As Per Your Interest</p>
+    </div>
+    <div id="carousel-container" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carousel-container" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carousel-container" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carousel-container" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carousel-container" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <a routerLink="/cuisine">
+            <img src="../../assets/cuisine-gujarat.jpg" class="d-block w-100 carousel-img" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Flavours</h5>
+              <p>Get acquainted with the amazing cuisine of gujarat</p>
+            </div>
+          </a>
+          </div>  
+
+          <div class="carousel-item" data-bs-interval="3000">
+            <a routerLink="/museum">
+              <img src="../../assets/museum-gujarat.jpg" class="d-block w-100 carousel-img" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Museums</h5>
+                <p>Check out the rich history of our state</p>
+              </div>
+            </a>
+          </div>
+          
+          <div class="carousel-item" data-bs-interval="3000">
+            <a routerLink="/florafauna">
+            <img src= "../../assets/wildlife-gujarat.jpg" class="d-block w-100 carousel-img" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Flora and Fauna</h5>
+              <p>Discover the diverse ecosystem present in gujarat</p>
+            </div>
+          </a>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <a routerLink="/religious-sites">
+            <img src="../../assets/temple-gujarat.jpg" class="d-block w-100 carousel-img" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Religious Sites</h5>
+              <p>See, Hear and Visit</p>
+            </div>
+          </a>
+          </div>          
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-container" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel-container" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+

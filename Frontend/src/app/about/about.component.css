@@ -1,0 +1,12 @@
+.about-container {
+  font-family: 'Montserrat', sans-serif;
+    color: white;
+    height: 549px;
+  justify-content: left;
+  background-image: url("../../assets/kutch-gujarat.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 40px;
+  padding-top: 100px;
+}

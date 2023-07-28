@@ -1,0 +1,68 @@
+<img src="../../assets/Purna-Wildlife-Sanctuary-Banner.jpg" alt="Purna Wildlife Sanctuary Banner" style="width: 100%; height: 700px; margin-bottom: 3%;">
+<div class="container purna-content" id="aboutLocation">
+    <h5 class="my-3" style="font-family: 'Roboto Slab', serif;">About The Location</h5>
+    <p>The sanctuary area of 160.84 sq. km. is spread over an undulating terrain with rolling hills, plateaus, and small valleys of what are the western and northern limits of the Western Ghats. The area is drained by the beautiful river Purna, which lends name to the sanctuary. The area has other rivers and rivulets also. Unlike most of Gujarat, the area is characterised by moderate, sometimes even heavy, rainfalls with the average annual rainfall of 2500 mm. The area falls in the highest rainfall zone of the state. The forest, therefore, belongs to the category of tropical moist deciduous forests. The landscape is lush green, thick forests, interspersed with rivers, small tribal villages and scattered fields. The human population is totally tribal represented by Bhils, Warlis, Konkanas, Dubdas, and Kolchas etc. The forests support a rich tribal culture in the form of houses, dresses, jewelry, agriculture, fishing, musical instruments, folk dances etc. When the sun sets, one may listen to the distant sounds of folk dances, tribal songs and their improvised musical instruments Pavry and drums.</p>
+    <p>Located in the predominantly tribal district of Dangs, Purna Wildlife Sanctuary, which was declared as a sanctuary in July 1990, has the thickest forest cover in the state of Gujarat. The forests have lofty teak trees rising tall and straight in the company of other associated flora viz. sadad, timru, bamboos, khair, kalam, haldu, sisham (rosewood), salai, kadaya, killai, sevan, tanachh etc. The healthy stock of lofty bamboos specially attracts your attention.</p>
+    <p>'Mahal', the main village in the sanctuary is centrally located on the banks of river Purna. There is a very old forest rest house on the banks of this river. The place is the most preferred site for Nature Education camp.</p>
+    <img src="../../assets/purna-image.jpg" class="my-5" alt="Purna Wildlife" style="width: 100%;">
+    <button class="btn btn-outline-dark" onclick= "window.open('https://forests.gujarat.gov.in/wildlife-sanctuaries.htm','_blank')">Find More Details Here</button>
+    <br><br>
+    <a routerLink="/"><button class="btn btn-outline-dark">Back</button></a>
+</div>
+<div class="container get-there" id="getThere">
+    <h4 class="my-3" style="font-family: 'Roboto Slab', serif;">How to Get There?</h4>
+    <br><br>
+    <div style="display: flex; margin-bottom: 8%;">
+        <img src="../../assets/by-road.png" alt="" class="direction-imgs">
+        <span class="transport-bus">
+            <h6>By Road</h6>
+            <p class="text-muted">The Nearest bus station is Vyara (20 kms).</p>
+        </span>
+    </div>
+    <div style="display: flex; margin-bottom: 8%;">
+        <img src="../../assets/by-train.png" alt="" class="direction-imgs">
+        <span class="transport-train">
+            <h6>By Train</h6>
+            <p class="text-muted">Vyara - 20 kms.</p>
+        </span>
+    </div>
+    <div style="display: flex; margin-bottom: 5%;">
+        <img src="../../assets/by-air.png" alt="" style="height: 100px; width: 250px;">
+        <span class="transport-flight">
+            <h6>By Air</h6>
+            <p class="text-muted">The Nearest airport is Surat (130 kms). Ahmedabad (400 kms. Approximately)</p>
+        </span>
+    </div>
+    <br><br>
+    <a routerLink="/"><button class="btn btn-outline-dark">Back</button></a>
+</div>
+<div class="container purna-content-lower" id="nearbyDestinations">
+    <h3 style="font-family: 'Roboto Slab', serif; margin-top: 3%; margin-bottom: 5%;">Nearby Attractions</h3>
+    <div class="row">
+        <div class="col-4 destination-container-image">
+            <a routerLink="/padam-dungri-ecotourism" class="darken">
+                <img src="../../assets/padam-dungri.jpg" alt="Padam Dungri Ecotourism" style="height: 300px; width: 300px;">
+                <h5>Padam Dungri Ecotourism</h5>
+            </a>
+        </div>
+        <div class="col-4 destination-container-image">
+            <a routerLink="/nargol-beach" class="darken">
+                <img src="../../assets/nargol-beach.jpg" alt="Nargol Beach" style="height: 300px; width: 300px;">
+                <h5>Nargol Beach</h5>
+            </a>
+        </div>
+        <div class="col-4 destination-container-image">
+            <a routerLink="/shrimad-rajchandra-ashram" class="darken">
+                <img src="../../assets/rajchandraashram.jpg" style="height: 300px; width: 300px;">
+                <h5>Shrimad Rajchandra Ashram</h5>
+            </a>
+        </div>
+    </div>
+    <br><br>
+    <a routerLink="/"><button class="btn btn-outline-dark">Back</button></a>
+</div>
+<ul class="navigation cf">
+    <li (click)="toAbout()" class="my-2 icon"><svg xmlns="http://www.w3.org/2000/svg" height="1.4em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg></li>
+    <li (click)="toGetThere()" class="my-2 icon"><svg xmlns="http://www.w3.org/2000/svg" height="1.4em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm306.7 69.1L162.4 380.6c-19.4 7.5-38.5-11.6-31-31l55.5-144.3c3.3-8.5 9.9-15.1 18.4-18.4l144.3-55.5c19.4-7.5 38.5 11.6 31 31L325.1 306.7c-3.2 8.5-9.9 15.1-18.4 18.4zM288 256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"/></svg></li>
+    <li (click)="toNearby()" class="my-2 icon"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M560 160A80 80 0 1 0 560 0a80 80 0 1 0 0 160zM55.9 512H381.1h75H578.9c33.8 0 61.1-27.4 61.1-61.1c0-11.2-3.1-22.2-8.9-31.8l-132-216.3C495 196.1 487.8 192 480 192s-15 4.1-19.1 10.7l-48.2 79L286.8 81c-6.6-10.6-18.3-17-30.8-17s-24.1 6.4-30.8 17L8.6 426.4C3 435.3 0 445.6 0 456.1C0 487 25 512 55.9 512z"/></svg></li>
+</ul>

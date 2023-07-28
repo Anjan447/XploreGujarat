@@ -1,0 +1,49 @@
+<img src="../../assets/flora-fauna-banner.jpg" id="top" alt="Flora Fauna Banner" style="width: 100%; height: 700px; margin-bottom: 3%;">
+<div class="container flora-content" id="about">
+    <h4 class="my-3" style="font-family: 'Roboto Slab', serif;">Flora - Fauna</h4>
+    <p>Gujarat wildlife sanctuaries are known for exotic collections of flora and fauna species which call on a large number of tourists from several parts of the globe. The topographical location gifted Gujarat with 4 National Parks and 21 Wildlife Sanctuaries which are managed by the Forest Department of the Government of Gujarat.</p>
+    <p>The vast expansion of mountain range is covered with scenic landscapes, dense forests, waterfalls, mountain streams, and rivers that support rich biodiversity of wildlife reserves. It has varied landforms, ranging from dry deciduous forests, majestic grasslands, wetlands, marine ecosystems and rich moist deciduous forests. The rich biodiversity of this place has as many as 500 varieties of mammals, more than 2000 species of birds, a wide range of insects, fishes, amphibians, reptiles and many more</p>
+    <p>The Gujarat Forest Department, over the years has spearheaded the conversion of waste land into small tracts of lush green land.</p>
+    <a routerLink="/"><button class="btn btn-outline-dark">Back</button></a>
+</div>
+<div class="container flora-content" id="more">
+    <h4 class="my-3" style="font-family: 'Roboto Slab', serif;">In and around Gujarat</h4>
+    <div class="row">
+        <div class="col-6 destination-container-image">
+            <a routerLink="/don-hill-station" class="darken">
+                <img src="../../assets/Don-Hill-Station-thumbnail.jpg" alt="Don Hill Station" style="height: 300px; width: 430px;">
+                <h5 style="padding-bottom: 8%;">Don Hill Station</h5>
+                <p>Dang</p>
+            </a>
+        </div>
+        <div class="col-6 destination-container-image">
+            <a routerLink="/sardar-sarovar" class="darken">
+                <img src="../../assets/Sardar-Sarovar-Dam-Thumbnail.jpg" alt="Sardar Sarovar" style="height: 300px; width: 430px;">
+                <h5 style="padding-bottom: 8%;">Sardar Sarovar</h5>
+                <p>Narmada</p>
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6 destination-container-image">
+            <a routerLink="/padam-dungri-ecotourism" class="darken">
+                <img src="../../assets/padam-dungri.jpg" alt="Padam Dungri" style="height: 300px; width: 430px;">
+                <h5 style="padding-bottom: 8%;">Padam Dungri Eco Tourism</h5>
+                <p>Tapi</p>
+            </a>
+        </div>
+        <div class="col-6 destination-container-image">
+            <a routerLink="/chhari-dhand" class="darken">
+                <img src="../../assets/Chhari-Dhand-Wetland-Reserve-Thumbnail.jpg" alt="Chhari Dhand Wetland Reserve" style="height: 300px; width: 430px;">
+                <h5 style="padding-bottom: 8%;">Chhari Dhand Wetland Reserve</h5>
+                <p>Kutch</p>
+            </a>
+        </div>
+    </div>
+    <a routerLink="/"><button class="btn btn-outline-dark">Back</button></a>
+</div>
+<ul class="navigation cf">
+    <li (click)="toAbout()" class="my-2 icon"><img src="../../assets/forest-icon.png" alt="" class="iconImg"></li>
+    <li (click)="toMore()" class="my-2 icon"><img src="../../assets/directions.png" alt="" class="iconImg"></li>
+    <li (click)="toTop()" class="my-2 icon"><img src="../../assets/up-arrow.png" alt="" class="iconImg"></li>
+</ul>

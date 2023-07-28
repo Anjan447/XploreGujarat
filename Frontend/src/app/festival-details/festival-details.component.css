@@ -1,0 +1,103 @@
+.fair-container {
+    height: 100%;
+    padding-top: 5%;
+}
+
+.fair-desc {
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.fair-image {
+    width: 400px;
+    height: 400px;
+    border-radius: 4%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    float: left;
+    margin-left: 15%;
+    margin-right: 4%;
+}
+
+.festival-container {
+    font-family: 'Roboto Slab', serif;
+    align-items: center;
+    height: 600px;
+}
+
+.festival-banner {
+    background-image: url("../../assets/festival-banner-gujarat.jpg");
+    height: 50%;
+    min-height: 500px; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.festival-banner-text-heading {
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.festival-banner-text-body {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.festival-button {
+    margin-top: 3%
+}
+
+.festival-location {
+    margin-left: 0.5%;
+    margin-right: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.saputara-container {
+    height: 100%;
+    padding-top: 5%;
+}
+
+.saputara-desc {
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.saputara-image {
+    width: 400px;
+    height: 400px;
+    border-radius: 4%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    float: left;
+    margin-left: 15%;
+    margin-right: 4%;
+}
+
+.navratri-container {
+    height: 100%;
+    padding-top: 5%;
+    padding-left: 15%;
+    background-color: #C1ECE4;
+    
+}
+
+.navaratri-desc {
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navaratri-image {
+    width: 400px;
+    height: 400px;
+    border-radius: 4%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    float: right;
+    margin-right: 15%;
+    margin-left: 4%;
+}

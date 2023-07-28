@@ -1,0 +1,52 @@
+<img src="../../assets/Jambughoda-Wildlife-Sanctuary-banner.jpg" alt="Jambughoda Wildlife Sanctuary Banner" style="width: 100%; height: 700px; margin-bottom: 3%;">
+<div class="container jambu-content" id="aboutLocation">
+    <h5 class="my-3" style="font-family: 'Roboto Slab', serif;">About The Location</h5>
+    <p>Located 70 km from Vadodara, and 20 km from Champaner, the Jambughoda Wildlife Sanctuary is best combined when visiting these cities. The wildlife sanctuary consists of forested hills with teeming wildlife and avian species. Teak, mahua and bamboo thickets cover the length and breadth of the forest, which is occupied by wild boars, nilgais (blue bull), jackals, hyenas, barking deer, sloth bears, and chausinghas (four-horned antelope) and leopards. A camping experience in close proximity to the wildlife is the highlight of the forest. One can book ahead at the forest rest house near the Kada reservoir. The 130.38 sq km sanctuary is a haven for nature lovers.</p>
+    <h5 class="my-3" style="font-family: 'Roboto Slab', serif;">Brief History</h5>
+    <p>The sanctuary was part of the princely state of Jambughoda before Independence. A number of tribal settlements used to be wedged in the middle of the jungle then. It was established in 1989, but the status of a wildlife sanctuary was given only in May 1990.</p>
+    <img src="../../assets/Jambughoda-Wildlife-Sanctuary-image.jpg" class="my-5" alt="Jambughoda Wildlife Sanctuary Image" style="width: 100%;">
+    <a routerLink="/"><button class="btn btn-outline-dark">Back</button></a>
+</div>
+<div class="container get-there" id="getThere">
+    <h4 class="my-3" style="font-family: 'Roboto Slab', serif;">How to Get There?</h4>
+    <br><br>
+    <div style="display: flex; margin-bottom: 8%;">
+        <img src="../../assets/by-road.png" alt="" class="direction-imgs">
+        <span class="transport-bus">
+            <h6>By Road</h6>
+            <p class="text-muted">Champaner is 45 km from Vadodara, accessible by bus or private vehicles. Cars can be hired in Vadodara to drive to Champaner-Pavagadh, which is the best option if you want to combine the journey with other sites like Jambughoda.</p>
+        </span>
+    </div>
+    <br><br>
+    <a routerLink="/"><button class="btn btn-outline-dark">Back</button></a>
+</div>
+<div class="container jambu-content-lower" id="nearbyDestinations">
+    <h3 style="font-family: 'Roboto Slab', serif; margin-top: 3%; margin-bottom: 5%;">Nearby Attractions</h3>
+    <div class="row">
+        <div class="col-4 destination-container-image">
+            <a routerLink="/statue-of-unity" class="darken">
+                <img src="../../assets/vallabbhai.jpg" style="height: 300px; width: 300px;">
+                <h5>Statue of Unity</h5>
+            </a>
+        </div>
+        <div class="col-4 destination-container-image">
+            <a routerLink="/laxmi-vilas-palace" class="darken">
+                <img src="../../assets/Laxmi-Vilas-Palace-Thumbnail.jpg" alt="Laxmi Vilas Palace" style="height: 300px; width: 300px;">
+                <h5>Laxmi Vilas Palace</h5>
+            </a>
+        </div>
+        <div class="col-4 destination-container-image">
+            <a routerLink="/kirti-mandir" class="darken">
+                <img src="../../assets/kirti-mandir-thumbnail.jpg" alt="Kirti Mandir" style="height: 300px; width: 300px;">
+                <h5>Kirti Mandir</h5>
+            </a>
+        </div>
+    </div>
+    <br><br>
+    <a routerLink="/"><button class="btn btn-outline-dark">Back</button></a>
+</div>
+<ul class="navigation cf">
+    <li (click)="toAbout()" class="my-2 icon"><svg xmlns="http://www.w3.org/2000/svg" height="1.4em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg></li>
+    <li (click)="toGetThere()" class="my-2 icon"><svg xmlns="http://www.w3.org/2000/svg" height="1.4em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm306.7 69.1L162.4 380.6c-19.4 7.5-38.5-11.6-31-31l55.5-144.3c3.3-8.5 9.9-15.1 18.4-18.4l144.3-55.5c19.4-7.5 38.5 11.6 31 31L325.1 306.7c-3.2 8.5-9.9 15.1-18.4 18.4zM288 256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"/></svg></li>
+    <li (click)="toNearby()" class="my-2 icon"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M560 160A80 80 0 1 0 560 0a80 80 0 1 0 0 160zM55.9 512H381.1h75H578.9c33.8 0 61.1-27.4 61.1-61.1c0-11.2-3.1-22.2-8.9-31.8l-132-216.3C495 196.1 487.8 192 480 192s-15 4.1-19.1 10.7l-48.2 79L286.8 81c-6.6-10.6-18.3-17-30.8-17s-24.1 6.4-30.8 17L8.6 426.4C3 435.3 0 445.6 0 456.1C0 487 25 512 55.9 512z"/></svg></li>
+</ul>

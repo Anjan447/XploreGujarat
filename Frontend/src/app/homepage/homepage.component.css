@@ -1,0 +1,66 @@
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bg h1 {
+  text-align: center;
+  font-size: 10em;
+  font-family: 'Sam';
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  -webkit-text-stroke: 3px #0d8589;
+  text-shadow: 12px -24px 20px black;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: white;
+}
+
+.bg {
+    background-image: url("../../assets/gujarat-home.jpeg");
+    height: 100%;
+    min-height: 950px;
+    object-fit: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+.cf {
+  display: block;
+}
+
+.navigation {
+  position: fixed;
+  list-style-type: none;
+  top: 50%;
+  margin-top: -110px;
+  right: 0;
+  padding: 5px 5px;
+  width: 60px;
+  background-color: #45cfdd;
+  z-index: 1;
+  border-radius: 5px 0 0 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.icon:hover {
+  background-color: #0e8388;
+  cursor: pointer;
+}
+
+.iconImg {
+  width: 50px;
+}
+
+.heading {
+  display: flex;
+  top: 0;
+  left: 0;
+  /* align-items: flex-start; */
+  margin-bottom: 40%;
+}

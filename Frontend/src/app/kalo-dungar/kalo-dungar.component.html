@@ -1,0 +1,66 @@
+<img src="../../assets/Kalo-Dungar-Banner.jpg" alt="Kalo Dungar Banner" style="width: 100%; height: 700px; margin-bottom: 3%;">
+<div class="container kalo-content" id="aboutLocation">
+    <h5 class="my-3" style="font-family: 'Roboto Slab', serif;">About The Location</h5>
+    <p>North of the village of Khavda, Kalo Dungar (Black Hill) marks Kutch's highest point (462 m), with remarkable views of the Great Rann salt flat (or inland sea if you’re visiting during the monsoon). You’ll need your own transport to visit. The hill is also famous for a 400-year old temple dedicated to Lord Dattatreya. You walk to the edge of the hill and look over at the sprawling blanched landscape that changes hues as the day progresses and the sun sinks behind the mountains. A 15-min drive from the base of the hill lands you on the India bridge that connects the far north of Kutch to the mainland. The area comes under the jurisdiction of the army and photography is not allowed. The Indo-Pak border lies about 40 km north from here.</p>
+    <h5 class="my-3" style="font-family: 'Roboto Slab', serif;">Brief History</h5>
+    <p>Legends say that Lord Dattatreya stopped to rest here and found a group of starving jackals. He offered them his body to eat and as they ate, his body continually regenerated itself. For the last four centuries, the priests at the temple prepare cooked rice for jackals who come in the late evenings for a meal.</p>
+    <img src="../../assets/Kalo-Dungar-image.jpg" class="my-5" alt="Kalo Dungar" style="width: 100%;">
+    <a routerLink="/"><button class="btn btn-outline-dark">Back</button></a>
+</div>
+<div class="container get-there" id="getThere">
+    <h4 class="my-3" style="font-family: 'Roboto Slab', serif;">How to Get There?</h4>
+    <br><br>
+    <div style="display: flex; margin-bottom: 8%;">
+        <img src="../../assets/by-road.png" alt="" class="direction-imgs">
+        <span class="transport-bus">
+            <h6>By Road</h6>
+            <p class="text-muted">State and private buses service the city from all major parts of Gujarat.</p>
+        </span>
+    </div>
+    <div style="display: flex; margin-bottom: 8%;">
+        <img src="../../assets/by-train.png" alt="" class="direction-imgs">
+        <span class="transport-train">
+            <h6>By Train</h6>
+            <p class="text-muted">The railway station lies on the western railways network.</p>
+        </span>
+    </div>
+    <div style="display: flex; margin-bottom: 5%;">
+        <img src="../../assets/by-air.png" alt="" style="height: 100px; width: 250px;">
+        <span class="transport-flight">
+            <h6>By Air</h6>
+            <p class="text-muted">Kalo Dungar lies 90 km north of Bhuj. Bhuj is well connected by air, rail and road. The Bhuj airport lies 4 km from the city and has ample domestic flights from major destinations in India.</p>
+        </span>
+    </div>
+    <br><br>
+    <a routerLink="/"><button class="btn btn-outline-dark">Back</button></a>
+</div>
+<div class="container kalo-content-lower" id="nearbyDestinations">
+    <h3 style="font-family: 'Roboto Slab', serif; margin-top: 3%; margin-bottom: 5%;">Nearby Attractions</h3>
+    <div class="row">
+        <div class="col-4 destination-container-image">
+            <a routerLink="/great-rann-of-kutch" class="darken">
+                <img src="../../assets/great-rann-of-kutch.jpg" alt="Great Rann Of Kutch" style="height: 300px; width: 300px;">
+                <h5>Great Rann Of Kutch</h5>
+            </a>
+        </div>
+        <div class="col-4 destination-container-image">
+            <a routerLink="/nirona" class="darken">
+                <img src="../../assets/Nirona-thumbnail.jpg" alt="Nirona" style="height: 300px; width: 300px;">
+                <h5>Nirona (Rogan Painting)</h5>
+            </a>
+        </div>
+        <div class="col-4 destination-container-image">
+            <a routerLink="/smritivan" class="darken">
+                <img src="../../assets/smritivan.jpeg" style="height: 300px; width: 300px;">
+                <h5>Smritivan</h5>
+            </a>
+        </div>
+    </div>
+    <br><br>
+    <a routerLink="/"><button class="btn btn-outline-dark">Back</button></a>
+</div>
+<ul class="navigation cf">
+    <li (click)="toAbout()" class="my-2 icon"><svg xmlns="http://www.w3.org/2000/svg" height="1.4em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg></li>
+    <li (click)="toGetThere()" class="my-2 icon"><svg xmlns="http://www.w3.org/2000/svg" height="1.4em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm306.7 69.1L162.4 380.6c-19.4 7.5-38.5-11.6-31-31l55.5-144.3c3.3-8.5 9.9-15.1 18.4-18.4l144.3-55.5c19.4-7.5 38.5 11.6 31 31L325.1 306.7c-3.2 8.5-9.9 15.1-18.4 18.4zM288 256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"/></svg></li>
+    <li (click)="toNearby()" class="my-2 icon"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M560 160A80 80 0 1 0 560 0a80 80 0 1 0 0 160zM55.9 512H381.1h75H578.9c33.8 0 61.1-27.4 61.1-61.1c0-11.2-3.1-22.2-8.9-31.8l-132-216.3C495 196.1 487.8 192 480 192s-15 4.1-19.1 10.7l-48.2 79L286.8 81c-6.6-10.6-18.3-17-30.8-17s-24.1 6.4-30.8 17L8.6 426.4C3 435.3 0 445.6 0 456.1C0 487 25 512 55.9 512z"/></svg></li>
+</ul>

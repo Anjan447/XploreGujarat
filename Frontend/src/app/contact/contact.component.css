@@ -1,0 +1,12 @@
+.contact-container {
+  font-family: 'Montserrat', sans-serif;
+color: white;
+  height: 549px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../../assets/gir-gujarat.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

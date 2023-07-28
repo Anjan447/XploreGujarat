@@ -1,0 +1,25 @@
+.festivals {
+    background-image: url("../../assets/festival-background.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.festival-container {
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+    min-height: 880px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    padding-left: 5%;
+    padding-top: 5%;
+    font-family: "sam", serif;
+    font-size: 50px;
+    font-weight: 400;
+    color: white;
+    -webkit-text-stroke: 1px #00383a;
+  }

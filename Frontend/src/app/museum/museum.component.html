@@ -1,0 +1,47 @@
+<img src="../../assets/Museum-Banner.jpg" id="top" alt="Gujarat Cuisine Banner" style="width: 100%; height: 700px; margin-bottom: 3%;">
+<div class="container museum-content" id="about">
+    <h4 class="my-3" style="font-family: 'Roboto Slab', serif;">Museums</h4>
+    <p>Gujarat, the land of traditions and legends, is laced with rich history and cultural heritages. The best way to explore the richness of the Gujarat culture is through its museums. In each and every state of Gujarat, one can find rich repositories that tells the world about its traditions, ethos and culture richness. There is so much that museum in Gujarat has to offer and it will be a deliberate sin of tourists miss a tour to the museums. Owing to its rich culture and heritage, there are many galleries and museums in Gujarat. Tourists who are fond of history and wants to experience traditions and cultures should visit the iconic museums of Gujarat. Experience the real gems of the gorgeous Gujarat through its splendid repositories.</p>
+    <a routerLink="/"><button class="btn btn-outline-dark">Back</button></a>
+</div>
+<div class="container museum-content" id="more">
+    <h4 class="my-3" style="font-family: 'Roboto Slab', serif;">Museums in and around Gujarat</h4>
+    <div class="row">
+        <div class="col-6 destination-container-image">
+            <a routerLink="/laxmi-vilas-palace" class="darken">
+                <img src="../../assets/Laxmi-Vilas-Palace-Thumbnail.jpg" alt="Laxmi Vilas Palace" style="height: 300px; width: 430px;">
+                <h5 style="padding-bottom: 8%;">Laxmi Vilas Palace</h5>
+                <p>Vadodara</p>
+            </a>
+        </div>
+        <div class="col-6 destination-container-image">
+            <a routerLink="/baroda-museum" class="darken">
+                <img src="../../assets/baroda-museum-thumbnail.jpg" alt="Baroda Museum" style="height: 300px; width: 430px;">
+                <h5 style="padding-bottom: 8%;">Baroda Museum</h5>
+                <p>Vadodara</p>
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6 destination-container-image">
+            <a routerLink="/royal-car-collection" class="darken">
+                <img src="../../assets/royal-collection-thumbnail.jpg" alt="Royal Vintage Classic Car Collection" style="height: 300px; width: 430px;">
+                <h5 style="padding-bottom: 8%;">Royal Vintage Classic Car Collection</h5>
+                <p>Rajkot</p>
+            </a>
+        </div>
+        <div class="col-6 destination-container-image">
+            <a routerLink="/dinosaur-museum" class="darken">
+                <img src="../../assets/BalasinorDinosaurFossilPark-thumbnail.jpg" alt="Balasinor Dinosaur Museum" style="height: 300px; width: 430px;">
+                <h5 style="padding-bottom: 8%;">Balasinor Dinosaur Museum</h5>
+                <p>Mahisagar</p>
+            </a>
+        </div>
+    </div>
+    <a routerLink="/"><button class="btn btn-outline-dark">Back</button></a>
+</div>
+<ul class="navigation cf">
+    <li (click)="toAbout()" class="my-2 icon"><img src="../../assets/museum-icon.png" alt="" class="iconImg"></li>
+    <li (click)="toMore()" class="my-2 icon"><img src="../../assets/directions.png" alt="" class="iconImg"></li>
+    <li (click)="toTop()" class="my-2 icon"><img src="../../assets/up-arrow.png" alt="" class="iconImg"></li>
+</ul>

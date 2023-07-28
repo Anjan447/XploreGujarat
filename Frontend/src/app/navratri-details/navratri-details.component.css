@@ -1,0 +1,33 @@
+.navratri-banner {
+    background-image: url("../../assets/navratri-banner.jpg");
+    height: 50%;
+    min-height: 500px; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    font-family: 'Roboto Slab', serif;
+}
+
+.navratri-banner-text-heading {
+    position: absolute;
+    bottom: 0;
+    left: 60%;
+    font-weight: 400;
+    font-size: 40px;
+    color: white;
+    width: 100%;
+}
+
+.navratri-content {
+    font-family: 'Montserrat', sans-serif;
+    padding: 5% 10%;
+    background-color: #C1ECE4;
+    margin-bottom: 3%;
+}
+
+.navratri-location {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+}
