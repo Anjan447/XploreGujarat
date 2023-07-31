@@ -81,6 +81,7 @@ import { DonHillStationComponent } from './don-hill-station/don-hill-station.com
 import { SardarSarovarComponent } from './sardar-sarovar/sardar-sarovar.component';
 import { ChhariDhandComponent } from './chhari-dhand/chhari-dhand.component';
 import { ReligiousSitesComponent } from './religious-sites/religious-sites.component';
+import { MapComponent } from './map/map.component';
 
 @NgModule({
   declarations: [
@@ -158,7 +159,8 @@ import { ReligiousSitesComponent } from './religious-sites/religious-sites.compo
     DonHillStationComponent,
     SardarSarovarComponent,
     ChhariDhandComponent,
-    ReligiousSitesComponent
+    ReligiousSitesComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,

@@ -9,6 +9,9 @@ export class HomepageComponent {
   tohome() {
     document.getElementById("home")!.scrollIntoView();
   }
+  tomap() {
+    document.getElementById("gujaratmap")!.scrollIntoView();
+  }
   tocarousel() {
     document.getElementById("carouselContainer")!.scrollIntoView();
   }

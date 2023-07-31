@@ -1,0 +1,38 @@
+.gujaratmap {
+    background-image: url("../../assets/festival-background.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 5%;
+}
+
+.heading {
+    padding-left: 5%;
+    padding-top: 5%;
+    font-family: "sam", serif;
+    font-size: 50px;
+    font-weight: 400;
+    color: white;
+    -webkit-text-stroke: 1px #00383a;
+}
+
+.gujaratmap-container{
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgba(0,0,0,.5);
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    width: 90%;
+    margin: 5rem auto 0 auto;
+    align-items: center;
+}
+
+  
+img {
+    height:750px;
+}
+  
+.text {
+    color: #ffffff;
+    margin-right: 15px;
+}
