@@ -1,28 +1,24 @@
-package com.xploregujarat.springboot.controllerImpl;
+package com.xploregujarat.springboot.Controller;
 
-import com.xploregujarat.springboot.DTO.TouristDTO;
 import com.xploregujarat.springboot.Utils.Constants;
 import com.xploregujarat.springboot.Utils.TouristUtils;
-import com.xploregujarat.springboot.controller.TouristController;
-import com.xploregujarat.springboot.repository.TouristRepository;
 import com.xploregujarat.springboot.service.TouristService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.mail.javamail.JavaMailSender;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Map;
 
 @RestController
-public class ControllerImpl implements TouristController {
+@RequestMapping(path = "/tourists")
+@CrossOrigin(origins = "*")
+public class Controller{
 
     @Autowired
     TouristService touristService;
 
-    @Override
+    @PostMapping(path = "/signup")
     public ResponseEntity<String> signUp(Map<String, String> requestMap) {
         try{
             return touristService.signUp(requestMap);
@@ -32,7 +28,7 @@ public class ControllerImpl implements TouristController {
         return TouristUtils.getResponseEntity(Constants.SOMETHING_WENT_WRONG ,HttpStatus.INTERNAL_SERVER_ERROR);
     }
 
-    @Override
+    @PostMapping(path = "/login")
     public ResponseEntity<String> login(Map<String, String> requestMap) {
         try{
             return touristService.login(requestMap);
@@ -43,27 +39,8 @@ public class ControllerImpl implements TouristController {
 
     }
 
-//    @Override
-//    public ResponseEntity<List<TouristDTO>> getAllTourists() {
-//        try{
-//            return touristService.getAllTourists();
-//        }catch (Exception ex){
-//            ex.printStackTrace();
-//        }
-//        return new ResponseEntity<List<TouristDTO>>(new ArrayList<>(),HttpStatus.INTERNAL_SERVER_ERROR);
-//    }
 
-//    @Override
-//    public ResponseEntity<String> update(Map<String, String> requestMap) {
-//        try{
-//            return touristService.update(requestMap);
-//        }catch (Exception ex){
-//            ex.printStackTrace();
-//        }
-//        return TouristUtils.getResponseEntity(Constants.SOMETHING_WENT_WRONG, HttpStatus.INTERNAL_SERVER_ERROR);
-//    }
-
-    @Override
+    @GetMapping(path = "/checkToken")
     public ResponseEntity<String> checkToken() {
         try {
             return touristService.checkToken();
@@ -74,7 +51,7 @@ public class ControllerImpl implements TouristController {
     }
 
 
-
+    @PostMapping("/forgotPassword")
     public ResponseEntity<String> forgotPassword(Map<String, String> requestMap) {
         try {
             return touristService.forgotPassword(requestMap);
@@ -84,6 +61,7 @@ public class ControllerImpl implements TouristController {
         return TouristUtils.getResponseEntity(Constants.SOMETHING_WENT_WRONG, HttpStatus.INTERNAL_SERVER_ERROR);
     }
 
+    @GetMapping({"/createTransaction/{amount}"})
     public void createTransaction(Double amount){ //@PathVariable(name = "amount")
 
     }

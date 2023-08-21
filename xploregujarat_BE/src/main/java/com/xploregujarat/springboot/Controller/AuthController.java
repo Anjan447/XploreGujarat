@@ -1,11 +1,10 @@
-package com.xploregujarat.springboot.controllerImpl;
+package com.xploregujarat.springboot.Controller;
 
 import com.xploregujarat.springboot.DTO.AuthRequestDTO;
 import com.xploregujarat.springboot.DTO.AuthResponseDTO;
 import com.xploregujarat.springboot.JWT.JwtUtils;
 import com.xploregujarat.springboot.model.Tourist;
 import com.xploregujarat.springboot.repository.TouristRepository;
-import com.xploregujarat.springboot.service.TouristService;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;

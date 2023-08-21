@@ -26,7 +26,7 @@ public class CustomerUserDetailsService implements UserDetailsService {
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         log.info("Inside loadUserByUsername{}", username);
-        tourist = touristRepository.findByEmailId(username);
+        tourist = touristRepository.findByEmail(username);
         if (!Objects.isNull(tourist))
             return new User(tourist.getEmail(), tourist.getPassword() //org.springframework.security.core.userdetails.User
                     , new ArrayList<>());

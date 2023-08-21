@@ -8,13 +8,6 @@ import org.hibernate.annotations.DynamicUpdate;
 import java.io.Serializable;
 import java.util.Date;
 
-@NamedQuery(name = "Tourist.findByEmailId", query = "select t from Tourist t where t.email=:email")
-
-@NamedQuery(name = "Tourist.getAllTourists", query = "select new com.xploregujarat.springboot.DTO.TouristDTO(t.id, t.name, t.mobile, t.email) from Tourist t where t.userRole = 'USER'") //, t.status
-
-//@NamedQuery(name = "Tourist.updateStatus", query = "update Tourist t set t.status=:status where t.id=:id")
-
-
 @Data
 @Entity
 @DynamicInsert

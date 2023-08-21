@@ -51,76 +51,12 @@ public class TouristServiceImpl implements TouristService {
     @Autowired
     private PasswordEncoder passwordEncoder;
 
-
-
-//
-//    public TouristServiceImpl(TouristRepository touristRepository, RoleRepository roleRepository, PasswordEncoder passwordEncoder) {
-//        this.touristRepository = touristRepository;
-//        this.roleRepository = roleRepository;
-//        this.passwordEncoder = passwordEncoder;
-//    }
-//
-//    //add new tourist
-//    @Override
-//    public Tourist addTourist(TouristDTO touristDTO) {
-//
-//        Tourist tourist = new Tourist();
-//        tourist.setName(touristDTO.getName());
-//        tourist.setEmail(touristDTO.getEmail());
-//        tourist.setPassword(touristDTO.getPassword());
-//
-//        return touristRepository.save(tourist);
-//
-//    }
-//
-//    @Override
-//    public List<Tourist> getAllTourists() {
-//        return touristRepository.findAll();
-//    }
-//
-//    @Override
-//    public Tourist getTouristById(long id) {
-//        Optional <Tourist> tourist = touristRepository.findById(id);
-//        if(tourist.isPresent()){
-//            return tourist.get();
-//        }else {
-//            throw new ResourceNotFoundException("Tourist", "id", id);
-//        }
-//    }
-//
-//    @Override
-//    public Tourist updateTourist(Tourist tourist, long id) {
-//        //first we check if tourist with given id is present in DB or not
-//        Tourist checkTourist = touristRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Tourist","Id", id ));
-//
-//        //now update
-//        checkTourist.setName(tourist.getName());
-//        checkTourist.setEmail(tourist.getEmail());
-//        checkTourist.setPassword(tourist.getPassword());
-//
-//        //save data to DB
-//        touristRepository.save(checkTourist);
-//        return checkTourist;
-//
-//    }
-//
-//    @Override
-//    public void deleteTourist(long id) {
-//        //first we check if tourist with given id is present in DB or not
-//        touristRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Tourist","Id", id ));
-//
-//        //now delete
-//        touristRepository.deleteById(id);
-//    }
-
-
-
     @Override
     public ResponseEntity<String> signUp(Map<String, String> requestMap) {
         log.info("Inside signup {}", requestMap);
         try {
             if (validateSignUpMap(requestMap)) {
-                Tourist tourist = touristRepository.findByEmailId(requestMap.get("email"));
+                Tourist tourist = touristRepository.findByEmail(requestMap.get("email"));
                 if (Objects.isNull(tourist)) {
                     touristRepository.save(getTouristFromMap(requestMap));
                     return TouristUtils.getResponseEntity("SignUp was Successful", HttpStatus.OK);

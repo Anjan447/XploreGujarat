@@ -9,18 +9,10 @@ import java.util.Map;
 
 public interface TouristService {
 
-//    Tourist addTourist(TouristDTO touristDTO);
-//    Tourist getTouristById(long id);
-//    Tourist updateTourist(Tourist tourist, long id);
-//    void deleteTourist(long id);
 
     ResponseEntity<String> signUp(Map<String, String> requestMap);
 
     ResponseEntity<String> login(Map<String, String> requestMap);
-
-//    ResponseEntity <List<TouristDTO>> getAllTourists();
-
-//    ResponseEntity<String> update(Map<String, String> requestMap);
 
     ResponseEntity<String> checkToken();
 
